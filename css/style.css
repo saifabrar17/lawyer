@@ -1,0 +1,214 @@
+/*
+font-family: 'Montserrat', sans-serif;
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #204f87;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+/*BANNER START*/
+.banner {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.banner h2 {
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.hg {
+    min-height: 100vh;
+    align-items: center;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    color: white;
+    font-size: 30px;
+    animation: updown 1s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes updown {
+    0% {
+        top: 85%;
+    }
+
+    100% {
+        top: 90%;
+    }
+}
+
+/*Who we are start*/
+.who-we-are {
+    min-height: 70vh;
+
+}
+
+.wwr-content {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.wwr-content h1 {
+    font-size: 30px;
+    color: #204f87;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.wwr-content h1:before {
+    content: '';
+    left: 0;
+    right: 20px;
+    width: 40px;
+    height: 3px;
+    top: -10px;
+    position: absolute;
+    background-color: #f2622b;
+}
+
+.wwr-content p {
+    text-align: justify;
+    font-size: 16px;
+    width: 70%;
+    color: #b0b0b1;
+    font-weight: 300;
+}
+
+.wre-img {
+    margin-top: 80px;
+}
+
+/*WHAT EWE DO START*/
+.what-we-do{
+   min-height: 80vh;
+   margin-top: 100px;
+   background-color: #F7F8F8;
+   padding-top: 50px;
+   background-image: url(../img/what-we-do-bg.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: 850px 400px;
+}
+.wwd-header{
+    position: relative;
+}
+.wwd-header h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #204f87;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.wwd-header h1::before{
+    content: '';
+    left: 48%;
+    right: 20px;
+    width: 40px;
+    height: 2px;
+    top: -10px;
+    position: absolute;
+    background-color: #f2622b;
+}
+.wwd-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.inner{
+    position: relative;
+    width: 80%;
+}
+.inner img{
+    display: block;
+    width: 100%;
+}
+.item .overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(40,55,126,0),rgba(40,55,126,1));
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.item:hover .overlay {
+    opacity: 1;
+}
+.item .overlay .fa {
+    height: 50px;
+    width: 50px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+
+    line-height: 50px;
+    cursor: pointer;
+
+}
+.item:hover .overlay .fa {
+    -webkit-animation: arrowIcon 0.8s ease;
+    animation: arrowIcon 0.8s ease;
+}
+@keyframes arrowIcon {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.item .overlay h4 {
+    color: #ffffff;
+    margin-top: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+.item:hover .overlay h4 {
+    animation: galleryText 0.8s ease;
+}
+
+@keyframes galleryText {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
